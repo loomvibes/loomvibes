@@ -1,3 +1,4 @@
+/* Reset padding, margins, and box-sizing */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #326fa8; /* Background color */
 }
 
 header {
@@ -26,7 +27,7 @@ section {
     position: relative;
     width: 100vw; /* Full page width */
     height: 100vh; /* Full viewport height */
-    background-color: #007bff; /* Blue background */
+    background-color: #326fa8; /* Background color */
     color: white;
     display: flex;
     justify-content: flex-start; /* Ensure content starts from the left */
@@ -42,33 +43,52 @@ section {
 }
 
 #section1 .text-container {
-    border-radius: 15px; /* Rounded corners for the text box */
-    padding: 20px;
-    margin-bottom: 30px;
-    text-align: left; /* Align text to the left */
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 30px;
     position: relative;
-    z-index: 2; /* Ensure the text container stays on top */
 }
 
-#section1 .text-container:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-#section1 .text-container h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: 700;
+/* Stylish font for the small-text ("Sustainable Fashion with Vibes") without uppercase */
+#section1 .small-text h2 {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-size: 1.6em; /* Smaller font size for "Sustainable Fashion with Vibes" */
+    margin-bottom: 5px;
+    font-weight: 400; /* Normal weight for the font */
     color: #fff;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow to make title pop */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    line-height: 1.4; /* Adjust line height to make text more compact */
 }
 
-#section1 .text-container p {
+/* Styling for the larger text ("LOOM VIBES") */
+#section1 .large-text {
+    font-size: 4.5em; /* Larger font size for "LOOM VIBES" */
+    font-weight: 900; /* Make it bold and prominent */
+    letter-spacing: 8px; /* Increased letter spacing for more impact */
+    color: #fff; /* White color */
+    text-transform: uppercase; /* Uppercase letters for a clean, professional look */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Strong shadow to make it stand out */
+    margin-bottom: 20px;
+    line-height: 1.1; /* Adjust line-height for tighter text */
+    font-style: italic; /* Make the text italic */
+    display: flex; /* Use flexbox to align the text */
+    flex-direction: column; /* Ensure "LOOM" and "VIBES" are stacked vertically */
+}
+
+/* Add space to the left of "VIBES" */
+#section1 .large-text h2:last-of-type {
+    margin-left: 20px; /* Adjust this value to control the left space of "VIBES" */
+}
+
+/* Optional: Adding some hover effects */
+#section1 .large-text:hover {
+    color: #ffcc00; /* Change color on hover */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Darker shadow on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#section1 .large-text p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #f0f0f0; /* Lighter text color */
