@@ -56,6 +56,7 @@ header:hover h1 {
     margin-bottom: 40px; /* Adds space between sections */
     background-color: transparent; /* Ensure transparency for sections */
     position: relative;
+    overflow: hidden; /* Ensures child elements like ::before stay inside */
 }
 
 /* Hero Section with Fixed Background and Hover Effect */
@@ -64,29 +65,25 @@ header:hover h1 {
     background-size: cover;
     padding: 120px 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Ensure no content escapes the container */
 }
 
-#hero::before {
+#hero .container {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the pseudo-element */
+}
+
+/* Hover Effect for All Sections (Including Hero) */
+.section:hover::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Transparent initially */
-    transition: background-color 0.3s ease;
-    z-index: 1; /* Behind content but above background */
-}
-
-#hero .container {
-    position: relative;
-    z-index: 2; /* Ensure content stays on top */
-}
-
-/* Hover Effect for All Sections (Including Hero) */
-.section:hover::before {
     background-color: rgba(0, 0, 0, 0.7); /* Black overlay on hover */
+    z-index: 1; /* Ensure it appears above the background but below the content */
+    transition: background-color 0.3s ease;
 }
 
 .section:hover {
