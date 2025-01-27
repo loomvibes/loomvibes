@@ -57,7 +57,7 @@ header:hover h1 {
 
 /* Hero Section with fixed background */
 #hero {
-    background: url('your-image.jpg') no-repeat center center fixed;
+    background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed;
     background-size: cover; /* Make sure the background covers the entire section */
     padding: 120px 0; /* Increased padding to showcase the background better */
 }
