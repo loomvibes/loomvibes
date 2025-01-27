@@ -140,11 +140,13 @@ p {
 /* Footer Section */
 footer {
     background: #000; /* Black background for footer */
-    padding: 20px 0;
+    padding: 40px 0; /* Add padding for space within the footer */
     text-align: center;
     color: #fff; /* White text */
+    border-top: 4px solid #fff; /* White border to differentiate from content */
 }
 
+/* Footer Text Styling */
 footer p {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
