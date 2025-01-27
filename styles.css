@@ -24,16 +24,24 @@ html, body {
 /* Header Section */
 header {
     background: #000; /* Black background for header */
-    padding: 40px 0;
+    padding: 50px 0;  /* Increased padding for more space */
     text-align: center;
     color: #fff; /* White text */
+    border-bottom: 4px solid #fff; /* Adds a sleek border at the bottom */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 48px;  /* Larger font size */
     font-weight: 700;
+    text-transform: uppercase;  /* Make it all uppercase for a bold effect */
+    letter-spacing: 2px;  /* Add space between letters */
+    transition: color 0.3s ease;
+}
+
+header:hover h1 {
+    color: #1E40AF; /* Blue color for the header text on hover */
 }
 
 /* Section Styling */
@@ -104,8 +112,8 @@ footer p {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 28px;
+    header h1 {
+        font-size: 32px; /* Adjust header font size for smaller screens */
     }
 
     h2 {
