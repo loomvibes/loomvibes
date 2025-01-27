@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body and Global Styling */
-html, body {
+ }
+ 
+ 
+ /* Body and Global Styling */
+ html, body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     height: 100%;
@@ -15,41 +16,45 @@ html, body {
     margin: 0; /* Reset margin */
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed; /* Fixed background for the whole page */
     background-size: cover; /* Cover the whole page */
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
-}
-
-/* Container Class - Decreased Width */
-.container {
+ }
+ 
+ 
+ /* Container Class - Decreased Width */
+ .container {
     width: 80%; /* Decreased width of sections to 80% of the screen */
     margin: 0 auto;
     max-width: 1000px; /* Optional: maximum width of sections */
-}
-
-/* Header Section */
-header {
+ }
+ 
+ 
+ /* Header Section */
+ header {
     background: #000; /* Black background for header */
     padding: 50px 0;
     text-align: center;
     color: #fff; /* White text */
     border-bottom: 4px solid #fff; /* Adds a sleek border at the bottom */
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header h1 {
+ }
+ 
+ 
+ header h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.3s ease;
-}
-
-header:hover h1 {
+ }
+ 
+ 
+ header:hover h1 {
     color: #1E40AF; /* Blue color for the header text on hover */
-}
-
-/* Section Styling */
-.section {
+ }
+ 
+ 
+ /* Section Styling */
+ .section {
     padding: 80px 0;
     color: #fff; /* White text */
     transition: all 0.3s ease;
@@ -58,36 +63,41 @@ header:hover h1 {
     background-color: transparent; /* Ensure transparency for sections */
     position: relative;
     overflow: hidden; /* Ensures child elements like ::before stay inside */
-}
-
-/* Hero Section with Fixed Background and Hover Effect */
-#hero {
+ }
+ 
+ 
+ /* Hero Section with Fixed Background and Hover Effect */
+ #hero {
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 120px 0;
     position: relative;
     overflow: hidden; /* Ensure no content escapes the container */
-}
-
-#hero .container {
+ }
+ 
+ 
+ #hero .container {
     position: relative;
     z-index: 2; /* Ensures content stays above the pseudo-element */
-}
-
-/* Additional Section Styling (Vision, Our Story, Mission) */
-.vision, #our-story, #mission {
+ }
+ 
+ 
+ /* Additional Section Styling (Vision, Our Story, Mission) */
+ .vision, #our-story, #mission {
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed; /* Fixed background for all sections */
     background-size: cover; /* Ensure the background covers the section */
     padding: 120px 0; /* Consistent padding for all sections */
-}
-
-/* Remove margin for the last section to remove gap */
-#mission {
+ }
+ 
+ 
+ /* Remove margin for the last section to remove gap */
+ #mission {
     margin-bottom: 0; /* Remove the gap between the last section and footer */
-}
-
-/* Hover Effect for All Sections (Including Hero) */
-.section:hover::before {
+ }
+ 
+ 
+ /* Hover Effect for All Sections (Including Hero) */
+ .section:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -97,36 +107,41 @@ header:hover h1 {
     background-color: rgba(0, 0, 0, 0.7); /* Black overlay on hover */
     z-index: 1; /* Ensure the overlay appears above the background but below the content */
     transition: background-color 0.3s ease;
-}
-
-.section:hover {
+ }
+ 
+ 
+ .section:hover {
     color: #fff; /* White text on hover */
-}
-
-/* Ensure content stays on top of overlay */
-.section .container {
+ }
+ 
+ 
+ /* Ensure content stays on top of overlay */
+ .section .container {
     position: relative;
     z-index: 2; /* Content stays on top of the overlay */
-}
-
-/* Heading Styling */
-h2 {
+ }
+ 
+ 
+ /* Heading Styling */
+ h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-p {
+ }
+ 
+ 
+ p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
-}
-
-/* Call to Action (CTA) Button */
-.cta {
+ }
+ 
+ 
+ /* Call to Action (CTA) Button */
+ .cta {
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
@@ -136,47 +151,56 @@ p {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta:hover {
+ }
+ 
+ 
+ .cta:hover {
     background-color: #000;
     color: #fff;
-}
-
-/* Footer Section */
-footer {
+ }
+ 
+ 
+ /* Footer Section */
+ footer {
     background: #000; /* Black background for footer */
     padding: 40px 0; /* Add padding for space within the footer */
     text-align: center;
     color: #fff; /* White text */
     border-top: 4px solid #fff; /* White border to differentiate from content */
-}
-
-/* Footer Text Styling */
-footer p {
+ }
+ 
+ 
+ /* Footer Text Styling */
+ footer p {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
+ }
+ 
+ 
+ /* Responsive Styling */
+ @media (max-width: 768px) {
     header h1 {
         font-size: 32px;
     }
-
+ 
+ 
     h2 {
         font-size: 28px;
     }
-
+ 
+ 
     p {
         font-size: 16px;
     }
-
+ 
+ 
     .cta {
         font-size: 18px;
     }
-
+ 
+ 
     .container {
         width: 90%; /* Ensure the container is more flexible */
     }
-}
+ }
+ 
