@@ -40,7 +40,6 @@ header h1 {
 /* Hero Section - Adjust the section width */
 #hero {
     margin-top: 40px; /* Create space between header and first section */
-    background-color: #f28f00; /* Warm Orange */
     color: white;
     padding: 100px 20px;
     text-align: center;
