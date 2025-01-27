@@ -7,7 +7,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
@@ -23,21 +23,22 @@ body {
 header {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);  /* Gradient background */
     color: white;
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 3em;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 header p {
     font-size: 1.2em;
-    margin-top: 5px;
+    font-weight: 300;
 }
 
 /* Main Content */
@@ -57,9 +58,10 @@ main {
 }
 
 .hero h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -76,19 +78,21 @@ main {
     padding: 60px 20px;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.2em;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p {
@@ -117,9 +121,10 @@ p {
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 30px 20px;
     text-align: center;
     margin-top: 40px;
+    border-top: 2px solid #ff8c00;
 }
 
 footer p {
