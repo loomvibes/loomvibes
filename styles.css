@@ -28,7 +28,6 @@ header {
     background: #000;
     padding: 40px 0;
     text-align: center;
-    z-index: 1;
 }
 
 header h1 {
@@ -36,12 +35,6 @@ header h1 {
     font-size: 36px;
     font-weight: 700;
     color: #fff;
-}
-
-/* Add padding to the hero section to create space from the header */
-#hero {
-    padding-top: 60px;  /* Add some top padding to create space between the header and hero section */
-    padding-bottom: 60px;
 }
 
 /* Section Styling */
