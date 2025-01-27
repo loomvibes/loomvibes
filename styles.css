@@ -48,11 +48,11 @@ header:hover h1 {
 /* Section Styling */
 .section {
     padding: 80px 0;
-    background-color: #000; /* Black background for sections */
     color: #fff; /* White text */
     transition: all 0.3s ease;
     text-align: center;
     margin-bottom: 40px; /* Adds space between sections */
+    background-color: transparent; /* Makes the background transparent */
 }
 
 /* Hero Section with fixed background */
