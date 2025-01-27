@@ -88,17 +88,40 @@ p {
     margin: 0 auto;
 }
 
-/* Our Story Section */
+/* Special Section - Vision */
+.vision h2 {
+    color: #f28f00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vision p {
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.8;
+}
+
+.cta {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    color: #003366;
+    text-transform: uppercase;
+}
+
+/* Our Story and Mission */
 #our-story {
     background-color: #f0f0f0;
 }
 
-/* Mission Section */
 #mission {
     background-color: #e8f4f8; /* Light Blue */
 }
 
-/* Vision Section */
 #vision {
     background-color: #fffbf2; /* Light Yellow */
 }
