@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     color: #fff;
     background-color: #1E40AF; /* Blue background for the entire webpage */
+    margin: 0; /* Reset margin */
 }
 
 /* Container Class - Decreased Width */
@@ -51,16 +52,14 @@ header:hover h1 {
     color: #fff; /* White text */
     transition: all 0.3s ease;
     text-align: center;
+    margin-bottom: 40px; /* Adds space between sections */
 }
 
-.section:hover {
-    background-color: #fff; /* White background on hover */
-    color: #000; /* Black text on hover */
-}
-
-/* Hero Section */
+/* Hero Section with fixed background */
 #hero {
-    padding: 80px 0;
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make sure the background covers the entire section */
+    padding: 120px 0; /* Increased padding to showcase the background better */
 }
 
 /* Heading Styling */
