@@ -16,6 +16,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    border-bottom: 4px solid #ffcc00; /* Golden border separating header and section */
 }
 
 h1 {
@@ -75,9 +76,9 @@ section {
     flex-direction: column; /* Ensure "LOOM" and "VIBES" are stacked vertically */
 }
 
-/* Add space to the left of "VIBES" */
+/* Add more space to the left of "VIBES" */
 #section1 .large-text h2:last-of-type {
-    margin-left: 20px; /* Adjust this value to control the left space of "VIBES" */
+    margin-left: 40px; /* Increase space between "LOOM" and "VIBES" */
 }
 
 /* Optional: Adding some hover effects */
