@@ -73,6 +73,13 @@ header:hover h1 {
     z-index: 2; /* Ensures content stays above the pseudo-element */
 }
 
+/* Additional Section Styling (Vision, Our Story, Mission) */
+.vision, #our-story, #mission {
+    background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed; /* Fixed background for all sections */
+    background-size: cover; /* Ensure the background covers the section */
+    padding: 120px 0; /* Consistent padding for all sections */
+}
+
 /* Hover Effect for All Sections (Including Hero) */
 .section:hover::before {
     content: "";
