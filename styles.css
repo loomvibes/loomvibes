@@ -11,8 +11,10 @@ html, body {
     line-height: 1.6;
     height: 100%;
     color: #fff;
-    background-color: #1E40AF; /* Blue background for the entire webpage */
+    background-color: #1E40AF; /* Blue background as fallback */
     margin: 0; /* Reset margin */
+    background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed; /* Fixed background for the whole page */
+    background-size: cover; /* Cover the whole page */
 }
 
 /* Container Class - Decreased Width */
@@ -55,11 +57,17 @@ header:hover h1 {
     background-color: transparent; /* Ensure transparency for sections */
 }
 
-/* Hero Section with fixed background */
+/* Hero Section with Fixed Background (No Exclusion) */
 #hero {
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed;
-    background-size: cover; /* Make sure the background covers the entire section */
-    padding: 120px 0; /* Increased padding to showcase the background better */
+    background-size: cover;
+    padding: 120px 0;
+}
+
+/* Hover Effect for All Sections (Including Hero) */
+.section:hover {
+    background-color: #000; /* Solid black background on hover */
+    color: #fff; /* White text on hover */
 }
 
 /* Heading Styling */
