@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Info Page</title>
+    <meta name="description" content="A simple informational webpage">
+    <title>My Info Webpage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Info Page</h1>
+        <div class="container">
+            <h1>Welcome to My Info Page</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main Content Section -->
     <main>
-        <p>This is a simple webpage hosted on GitHub Pages!</p>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Home</h2>
+                <p>Welcome to my website. This is an informational webpage that explains who we are and what we offer.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a passionate team dedicated to delivering high-quality services to our clients. Our mission is to provide innovative solutions that meet the needs of businesses and individuals.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Web Development</h3>
+                        <p>We build responsive, user-friendly websites tailored to your needs.</p>
+                    </div>
+                    <div class="service">
+                        <h3>SEO Optimization</h3>
+                        <p>We help you improve your website's visibility on search engines.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Graphic Design</h3>
+                        <p>We create stunning visuals for websites, branding, and marketing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have any questions or want to collaborate? Feel free to get in touch with us.</p>
+                <address>
+                    Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                    Phone: (123) 456-7890
+                </address>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Info Webpage. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
