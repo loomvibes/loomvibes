@@ -89,12 +89,18 @@ header:hover h1 {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Black overlay on hover */
-    z-index: 1; /* Ensure it appears above the background but below the content */
+    z-index: 1; /* Ensure the overlay appears above the background but below the content */
     transition: background-color 0.3s ease;
 }
 
 .section:hover {
     color: #fff; /* White text on hover */
+}
+
+/* Ensure content stays on top of overlay */
+.section .container {
+    position: relative;
+    z-index: 2; /* Content stays on top of the overlay */
 }
 
 /* Heading Styling */
