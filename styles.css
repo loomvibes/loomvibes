@@ -8,7 +8,7 @@
 /* Body and Container */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    /*background-color: #f9f9f9;*/
     color: #333;
     line-height: 1.6;
     padding-top: 80px; /* To avoid header overlap */
