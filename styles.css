@@ -80,6 +80,11 @@ header:hover h1 {
     padding: 120px 0; /* Consistent padding for all sections */
 }
 
+/* Remove margin for the last section to remove gap */
+#mission {
+    margin-bottom: 0; /* Remove the gap between the last section and footer */
+}
+
 /* Hover Effect for All Sections (Including Hero) */
 .section:hover::before {
     content: "";
