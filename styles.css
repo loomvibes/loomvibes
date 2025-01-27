@@ -10,7 +10,7 @@ html, body {
     line-height: 1.6;
     height: 100%;
     color: #fff;
-    background-color: #000;
+    background-color: #1E40AF; /* Blue background for the entire webpage */
 }
 
 /* Link to Google Fonts */
@@ -37,17 +37,31 @@ header h1 {
     color: #fff;
 }
 
+/* Hero Section */
+#hero {
+    padding: 80px 0;
+    background-color: #000; /* Black background for the hero section */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+}
+
+#hero:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
+
 /* Section Styling */
 .section {
     padding: 80px 0;
+    background-color: #000; /* Black background for each section */
+    color: #fff; /* White text */
     transition: all 0.3s ease;
-    background-color: #000;
     text-align: center;
 }
 
 .section:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
 }
 
 h2 {
