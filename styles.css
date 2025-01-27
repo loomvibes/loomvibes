@@ -54,17 +54,28 @@ section {
 }
 
 #section1 .image-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
+    position: relative;
+    width: 50%; /* Image 1 will occupy 50% of the section width */
     height: 100%;
 }
 
-#section1 .image-container img {
+#section1 .image1 {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make sure the image covers the area without distortion */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#section1 .image2 {
+    width: 50%; /* Image 2 will be half the width of Image 1 */
+    height: 50%; /* Image 2 will be half the height of Image 1 */
+    object-fit: cover;
+    position: absolute;
+    top: 25%; /* Align Image 2 vertically in the middle of Image 1 */
+    right: 5%; /* Overlap Image 1 by 5% from the right */
+    z-index: 1; /* Ensure Image 2 is on top of Image 1 */
     border-radius: 10px;
 }
 
