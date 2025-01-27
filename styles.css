@@ -32,6 +32,12 @@ header {
     color: #fff; /* White text */
     border-bottom: 4px solid #fff; /* Adds a sleek border at the bottom */
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden; /* Ensures the content does not overflow */
+}
+
+header .container {
+    position: relative;
+    transition: width 0.3s ease, transform 0.3s ease;
 }
 
 header h1 {
@@ -41,6 +47,11 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.3s ease;
+}
+
+header:hover .container {
+    width: 90%; /* Decrease the width to 90% */
+    transform: scaleX(0.9); /* Apply horizontal shrink */
 }
 
 header:hover h1 {
@@ -60,7 +71,6 @@ header:hover h1 {
     border-radius: 0; /* Initial state: no rounded corners */
 }
 
-/* Hero Section with Fixed Background and Hover Effect */
 #hero {
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -102,6 +112,7 @@ header:hover h1 {
 .section:hover {
     color: #fff; /* White text on hover */
     border-radius: 20px; /* Rounded corners when hovered */
+    transform: scaleX(0.95); /* Shrink the section width slightly */
 }
 
 /* Ensure content stays on top of overlay */
