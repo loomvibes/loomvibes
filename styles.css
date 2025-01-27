@@ -15,6 +15,7 @@ html, body {
     margin: 0; /* Reset margin */
     background: url('images/pexels-surene-palvie-1075224-2070676.jpg') no-repeat center center fixed; /* Fixed background for the whole page */
     background-size: cover; /* Cover the whole page */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
 /* Container Class - Decreased Width */
