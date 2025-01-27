@@ -19,23 +19,66 @@ header {
 
 h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 20px 0;
 }
 
 #section1 {
-    background-color: #f9f9f9;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    text-align: center;
+}
+
+#section1 .container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#section1 .text-container {
+    flex: 1;
+    padding-right: 20px;
+    margin-bottom: 20px; /* Add space between divs */
+}
+
+#section1 .text-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#section1 .text-container p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#section1 .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between images */
+}
+
+#section1 .image-container img {
+    width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#section1 .image-container img:hover {
+    transform: scale(1.05);
 }
 
 #section2 {
-    background-color: #e2e2e2;
-}
-
-#section3 {
-    background-color: #d4d4d4;
+    background-color: #f2f2f2;
+    text-align: center;
 }
 
 footer {
@@ -47,4 +90,5 @@ footer {
 
 footer p {
     margin: 0;
+    font-size: 1em;
 }
