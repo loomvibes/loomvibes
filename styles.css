@@ -63,11 +63,18 @@ header h1 {
 
 /* Section Styling */
 .section {
-    background-color: white;
+    background-color: #000; /* Black background */
+    color: white;
     margin-bottom: 40px;
     padding: 60px 20px;
     border-radius: 8px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.section:hover {
+    background-color: #fff; /* White background when hovered */
+    color: #333; /* Change text color to black when hovered */
 }
 
 h2 {
@@ -81,7 +88,7 @@ h2 {
 
 p {
     font-size: 1.1em;
-    color: #555;
+    color: #fff;
     text-align: justify;
     line-height: 1.8;
     max-width: 900px;
