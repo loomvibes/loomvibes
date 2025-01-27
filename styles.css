@@ -1,149 +1,116 @@
-/* Reset all default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Container */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+html, body {
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    padding-top: 80px; /* To avoid header overlap */
-}
-
-.container {
-    width: 70%; /* Decrease width of container */
-    max-width: 1000px; /* Optional: Maximum width for larger screens */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    background: #003366; /* Dark Blue */
+    height: 100%;
     color: #fff;
+    background-color: #000;
+}
+
+/* Link to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Section */
+header {
+    background: #000;
     padding: 40px 0;
     text-align: center;
 }
 
 header h1 {
-    font-family: 'Lora', serif;
-    font-size: 2.5em;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
     font-weight: 700;
+    color: #fff;
 }
 
-/* General Section Styling (make all sections same as #mission) */
+/* Section Styling */
 .section {
-    background-color: #e8f4f8; /* Light Blue (as in #mission section) */
-    color: #333; /* Text color */
-    margin-bottom: 40px;
-    padding: 60px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Decrease width of sections */
-    margin-left: auto;
-    margin-right: auto; /* Center the section */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 80px 0;
+    transition: all 0.3s ease;
+    background-color: #000;
+    text-align: center;
 }
 
-/* Hover effect for all sections */
 .section:hover {
-    background-color: #fff; /* White background on hover */
-    color: #333; /* Text color stays black on hover */
+    background-color: #fff;
+    color: #000;
 }
 
 h2 {
-    font-family: 'Lora', serif;
-    font-size: 2.2em;
-    color: #003366; /* Dark Blue */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
     margin-bottom: 20px;
-    text-align: center;
-    font-weight: 700;
 }
 
 p {
-    font-size: 1.1em;
-    color: #333;
-    text-align: justify;
-    line-height: 1.8;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Special Vision Section */
-.vision h2 {
-    color: #f28f00; /* Orange color for Vision section */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.vision p {
-    font-size: 1.2em;
-    max-width: 900px;
-    margin: 0 auto;
-    color: #333;
-    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
 .cta {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
-    color: #003366;
+    font-weight: 700;
+    font-size: 20px;
     text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 /* Footer Section */
 footer {
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    padding: 30px 20px;
+    background: #000;
+    padding: 20px 0;
     text-align: center;
-    border-top: 5px solid #f28f00; /* Accent line */
+    color: #fff;
 }
 
 footer p {
-    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 
-/* Link Styling */
-a {
-    color: #f28f00;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-a:hover {
-    color: #003366;
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .container {
-        width: 90%; /* Reduce width on small screens */
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .hero h2 {
-        font-size: 2em;
+    h1 {
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 28px;
     }
 
     p {
-        font-size: 1em;
+        font-size: 16px;
+    }
+
+    .cta {
+        font-size: 18px;
     }
 }
