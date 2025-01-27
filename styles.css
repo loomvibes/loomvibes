@@ -145,6 +145,15 @@ a:hover {
     color: #003366;
     transform: scale(1.05);
 }
+/* Add space between the header and the first section */
+#hero {
+    margin-top: 40px; /* Add top margin to create space between header and section */
+}
+
+/* Alternatively, you can use padding if you'd prefer to control the space inside the section itself */
+#hero {
+    padding-top: 40px; /* Padding inside the section itself */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
