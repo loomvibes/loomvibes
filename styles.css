@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #326fa8; /* Background color */
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: white;
@@ -64,6 +66,7 @@ nav ul li a:hover {
     color: #ffcc00; /* Change color to golden on hover */
 }
 
+/* Section styling */
 section {
     position: relative;
     width: 100vw; /* Full page width */
@@ -75,6 +78,7 @@ section {
     padding: 40px;
 }
 
+/* Section 1: Text container styling */
 #section1 .container {
     display: flex;
     flex-direction: column; /* Stack text vertically */
@@ -89,53 +93,47 @@ section {
     position: relative;
 }
 
-/* Stylish font for the small-text ("Sustainable Fashion with Vibes") without uppercase */
+/* Styling for small-text ("Sustainable Fashion with Vibes") */
 #section1 .small-text h2 {
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
-    font-size: 1.6em; /* Smaller font size for "Sustainable Fashion with Vibes" */
+    font-size: 1.6em;
     margin-bottom: 5px;
-    font-weight: 400; /* Normal weight for the font */
+    font-weight: 400;
     color: #fff;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    line-height: 1.4; /* Adjust line height to make text more compact */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
 }
 
-/* Styling for the larger text ("LOOM VIBES") */
+/* Styling for larger text ("LOOM VIBES") */
 #section1 .large-text {
-    font-size: 4.5em; /* Larger font size for "LOOM VIBES" */
-    font-weight: 900; /* Make it bold and prominent */
-    letter-spacing: 8px; /* Increased letter spacing for more impact */
-    color: #fff; /* White color */
-    text-transform: uppercase; /* Uppercase letters for a clean, professional look */
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Strong shadow to make it stand out */
+    font-size: 4.5em;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
-    line-height: 1.1; /* Adjust line-height for tighter text */
-    font-style: italic; /* Make the text italic */
-    display: flex; /* Use flexbox to align the text */
-    flex-direction: column; /* Ensure "LOOM" and "VIBES" are stacked vertically */
+    line-height: 1.1;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Add more space to the left of "VIBES" */
+/* Adding space to the left of "VIBES" */
 #section1 .large-text h2:last-of-type {
-    margin-left: 40px; /* Increase space between "LOOM" and "VIBES" */
+    margin-left: 40px;
 }
 
-/* Optional: Adding some hover effects */
+/* Hover effects for "LOOM VIBES" */
 #section1 .large-text:hover {
-    color: #ffcc00; /* Change color on hover */
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Darker shadow on hover */
-    transform: scale(1.05); /* Slight scaling effect */
-    transition: all 0.3s ease; /* Smooth transition */
+    color: #ffcc00;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
-#section1 .large-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #f0f0f0; /* Lighter text color */
-    margin-top: 10px;
-}
-
+/* Styling for the image container */
 #section1 .image-container {
     position: absolute;
     top: 0;
@@ -152,10 +150,10 @@ section {
     object-fit: cover;
     position: absolute;
     top: 0;
-    right: 0; /* Image 1 starts at the far right */
-    z-index: 1; /* Image 1 is on top of Image 2 */
-    border-top-left-radius: 30px; /* Rounded top left corner */
-    border-bottom-left-radius: 30px; /* Rounded bottom left corner */
+    right: 0;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 #section1 .image2 {
@@ -163,19 +161,20 @@ section {
     height: 50%; /* Image 2 is half the height of Image 1 */
     object-fit: cover;
     position: absolute;
-    top: 20%; /* Create space between the top of the section and Image 2 */
-    right: 60%; /* Image 2 comes right after Image 1 */
-    z-index: 1; /* Image 2 is on the bottom */
-    border-top-left-radius: 30px; /* Rounded top left corner */
-    border-bottom-left-radius: 30px; /* Rounded bottom left corner */
+    top: 20%; /* Space between the top of the section and Image 2 */
+    right: 60%;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px 0;
     background-color: #333;
     color: white;
-    margin-top: 40px; /* This will shift the footer down */
+    margin-top: 40px;
 }
 
 footer p {
@@ -183,35 +182,99 @@ footer p {
     font-size: 1em;
 }
 
-/* New Section: Full Webpage Photo */
-#full-webpage-photo {
-    background-color: #fff; /* White background */
-    padding: 40px 20px; /* Padding around the section */
-    text-align: center; /* Center-align content */
-    color: #333; /* Dark text color */
+/* Full Webpage Photo Section */
+#image-1 {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0; /* Ensure there's no margin pushing the footer down */
+    margin-bottom: 0; /* Prevent pushing the footer down */
+    position: relative; /* Required for z-index */
+    z-index: 2; /* Bring image-1 to the front */
 }
 
-/* Title Styling for the Full Webpage Photo Section */
-#full-webpage-photo h2 {
+/* Title styling for the full webpage photo section */
+#image-1 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em; /* Font size for the heading */
+    font-size: 2.5em;
     color: #326fa8; /* Match header background color */
-    margin-bottom: 20px; /* Space between the title and image */
     text-transform: uppercase;
     font-weight: 600;
 }
 
-/* Image Styling for the Full Webpage Photo */
-#full-webpage-photo .full-webpage-image {
-    max-width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Rounded corners for the image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow around the image */
-    object-fit: cover; /* Ensure the image covers the area properly without distortion */
-    margin-bottom: 40px; /* Added margin to push footer down */
+/* Image styling for the full webpage photo section */
+#image-1 .image-1 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* New Section: Image 2 Styling */
+#image-2 {
+    margin-top: -50px;
+    background-color: #f8f8f8; /* Light background */
+    padding: 0px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Required for z-index */
+    z-index: 1; /* Send image-2 to the back */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+}
+
+/* Image 2 Styling */
+#image-2 img {
+    top: -50px;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+     /* Shadow around the image */
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+/* New Section: Image 3 Styling */
+#image-3 {
+    margin-top: 0px;
+    background-color: #f8f8f8;  /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;  /* Dark text color for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Position relative for easier control */
+    z-index: 1;  /* Keep this image in normal stacking order */
+    width: 100vw;  /* Full width of the viewport */
+    height: 100vh;  /* Full height of the viewport */
+}
+
+/* Image Styling inside #image-3 */
+#image-3 .image-3 {
+    max-width: 100%;  /* Ensure the image takes up the full width */
+    height: auto;  /* Keep the image's aspect ratio */
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;  /* Optional: add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow around the image */
+    object-fit: cover;  /* Ensure the image covers the entire section without distortion */
+    margin-bottom: 40px;  /* Add some space below the image */
+}
+
+/* Optional: Styling for title or text (if you want to add text inside this section) */
+#image-3 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #326fa8;  /* Matching color to header section */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
