@@ -188,7 +188,7 @@ footer {
     padding: 20px 0;
     background-color: #333;
     color: white;
-    margin-top: 40px;
+    margin-top: 0px;
     border-top: 5px solid #ffcc00;
     border-bottom: 5px solid #ffcc00;
 }
@@ -268,7 +268,7 @@ footer p {
 }
 
 #image-3 .image-3 {
-    margin-top: 50px;
+    margin-top: 55px;
     max-width: 100%;
     height: auto;
     border-top-right-radius: 100px;
