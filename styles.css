@@ -255,6 +255,7 @@ footer p {
 #image-3 {
     margin-top: 50px;
     padding: 40px 20px;
+    background-color: #f8f8f8;
     text-align: center;
     color: #333;
     display: flex;
