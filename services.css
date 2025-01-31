@@ -1,84 +1,214 @@
-/* Import common styles */
-@import url('styles.css');
+/* Import common fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@500&display=swap');
 
-/* Service-specific styling adjustments */
+/* Reset padding, margins, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-top: 5px solid #ffcc00;
+    border-bottom: 5px solid #ffcc00; /* Gold border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100vw; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header-title {
+    text-align: center;
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif; /* Using Oswald for a more modern look */
+    font-size: 2.8em;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #ffcc00; /* Gold color for text */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    margin-right: 8px; /* Adds space between icon and text */
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Georgia', serif; /* Georgia for serif font */
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* On hover, change text to gold */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Services Section Styling */
 #services-section {
-    background-color: #1a5d7b; /* A slightly different shade of blue for the services section */
+    background-color: #fff;
+    padding: 50px 20px;
+    color: #333;
+    width: 100vw; /* Full width */
+    margin: 0; /* Remove margin */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-#services-section .text-container h2 {
-    font-size: 3.2em; /* Slightly larger heading for services */
-}
-
-#services-section .text-container p {
-    font-size: 1.3em; /* Increase font size for better readability */
-    color: #f0f0f0;
-}
-
-/* Section for Our Story */
-#our-story {
-    background-color: #2b72a1;
-}
-
-#our-story .text-container h2 {
-    font-size: 3.2em; /* Larger heading for the story section */
-}
-
-#our-story .text-container p {
-    font-size: 1.3em;
-    line-height: 1.8;
-}
-
-/* Section for Our Mission */
-#our-mission {
-    background-color: #3b82c4;
-}
-
-#our-mission .text-container h2 {
+#services-section h2 {
+    text-align: center;
     font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #ff7f50;
 }
 
-#our-mission .text-container p {
-    font-size: 1.3em;
+#services-section p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
     line-height: 1.8;
 }
 
-/* Section for Our Vision */
-#our-vision {
-    background-color: #4d94d4;
+/* Service Cards Layout */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20; /* Remove padding */
+    width: 100%;
 }
 
-#our-vision .text-container h2 {
-    font-size: 3.2em;
+.service-card {
+    background-color: #e0f7fa; /* Light blue Yellow */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    width: 100%; /* Make sure the card uses full available width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-#our-vision .text-container p {
-    font-size: 1.3em;
-    line-height: 1.8;
+.service-card h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service-card i {
+    font-size: 3em;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 /* Call to Action Section */
 #cta {
-    background-color: #007bff;
+    background-color: #e6d9ff; /* Lavender background */
     padding: 50px 20px;
     text-align: center;
+    color: #333;
+    width: 100vw; /* Full width */
+    margin: 0; /* Remove margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-family: 'Georgia', serif; /* Classic serif font */
 }
 
 #cta p {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    color: #333;
+    font-weight: normal; /* Lighter weight for a more refined look */
 }
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #f0f0f0;
-    color: #326fa8;
-    font-size: 1.3em;
+    background-color: #fff;
+    color: #326fa8; /* Calming blue color */
+    font-size: 1.5em;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Georgia', serif; /* Matching classic font */
 }
 
 .cta-button:hover {
-    background-color: #ffcc00;
+    background-color: #f0f0f0; /* Soft grey on hover */
+    color: #ff7f50; /* Goldish color for hover */
+    transform: scale(1.05);
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #ffcc00; /* Gold border */
+    border-bottom: 5px solid #ffcc00; /* Gold border */
+    width: 100vw; /* Full width */
+    margin: 0; /* Remove margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
 }

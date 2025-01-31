@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Georgia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@500&display=swap');
+
 
 /* Reset padding, margins, and box-sizing */
 * {
@@ -9,9 +10,13 @@
 
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    background-color: #326fa8; /* Background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header styling */
@@ -19,12 +24,14 @@ header {
     background-color: #333;
     color: white;
     padding: 20px;
-    border-bottom: 4px solid #ffcc00;
-    border-top: 4px solid #ffcc00;
+    border-top: 5px solid #ffcc00;
+    border-bottom: 5px solid #ffcc00; /* Gold border */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100vw; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .header-content {
@@ -42,13 +49,15 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 3em;
-    font-family: 'Bebas Neue', sans-serif; /* Use a cleaner font */
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif; /* Using Oswald for a more modern look */
+    font-size: 2.8em;
+    font-weight: 700;
     font-style: italic;
-    color: #fff;
+    letter-spacing: 1px;
+    color: #ffcc00; /* Gold color for text */
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     display: flex;
@@ -62,17 +71,17 @@ nav ul li {
 
 nav ul li a {
     margin-right: 8px; /* Adds space between icon and text */
-    font-size: 1.1em; /* Slightly larger icon */
+    font-size: 1.1em;
     text-decoration: none;
     color: white;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Georgia for serif font */
     font-weight: 400;
     letter-spacing: 1px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* On hover, change text to gold */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
@@ -221,7 +230,7 @@ footer p {
 }
 
 #image-2 {
-    margin-top: 5px;
+    margin-top: 0px;
     /*background-color: #f8f8f8;*/
     padding: 0px;
     text-align: center;

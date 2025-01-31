@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Loom Vibes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -24,7 +24,6 @@
         </div>
     </header>
 
-    <!-- Separator line between header and section -->
     <div class="header-line"></div>
 
     <!-- Section 1: Contact Information -->
@@ -37,29 +36,38 @@
         </div>
     </section>
 
-    <!-- Section 2: Contact Form (optional) -->
+    <!-- Section 2: Contact Form -->
     <section id="contact-form">
         <div class="container">
             <form action="submit_form.php" method="post">
                 <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name:</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="mobile">Mobile:</label>
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <i class="fas fa-comment"></i>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Loom Vibes Exporter</p>
+        <p>© 2025 Loom Vibes</p>
     </footer>
 </body>
 </html>
