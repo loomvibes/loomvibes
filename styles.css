@@ -253,10 +253,10 @@ footer p {
 }
 
 #image-3 {
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 40px 20px;
     text-align: center;
-    background-color: #d4ac0d;
+    background-color: #f1c40f;
     color: #333;
     display: flex;
     justify-content: center;
@@ -274,7 +274,7 @@ footer p {
     border-bottom-left-radius: 100px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 #image-3 h2 {
