@@ -1,0 +1,84 @@
+/* Import common styles */
+@import url('styles.css');
+
+/* Service-specific styling adjustments */
+#services-section {
+    background-color: #1a5d7b; /* A slightly different shade of blue for the services section */
+}
+
+#services-section .text-container h2 {
+    font-size: 3.2em; /* Slightly larger heading for services */
+}
+
+#services-section .text-container p {
+    font-size: 1.3em; /* Increase font size for better readability */
+    color: #f0f0f0;
+}
+
+/* Section for Our Story */
+#our-story {
+    background-color: #2b72a1;
+}
+
+#our-story .text-container h2 {
+    font-size: 3.2em; /* Larger heading for the story section */
+}
+
+#our-story .text-container p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+/* Section for Our Mission */
+#our-mission {
+    background-color: #3b82c4;
+}
+
+#our-mission .text-container h2 {
+    font-size: 3.2em;
+}
+
+#our-mission .text-container p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+/* Section for Our Vision */
+#our-vision {
+    background-color: #4d94d4;
+}
+
+#our-vision .text-container h2 {
+    font-size: 3.2em;
+}
+
+#our-vision .text-container p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #007bff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cta p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    color: #326fa8;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+}

@@ -1,0 +1,57 @@
+/* Import common styles */
+@import url('styles.css');
+
+/* Contact-specific styling adjustments */
+#contact-section {
+    background-color: #1a5d7b; /* A different shade of blue for contact section */
+}
+
+#contact-section .text-container h2 {
+    font-size: 3.2em; /* Slightly larger heading for contact */
+}
+
+#contact-section .text-container p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+/* Section for Contact Form */
+#contact-form {
+    background-color: #2b72a1;
+    padding: 40px 20px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    font-size: 1.2em;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+#contact-form button {
+    padding: 15px 30px;
+    background-color: #f0f0f0;
+    color: #326fa8;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #ffcc00;
+}
