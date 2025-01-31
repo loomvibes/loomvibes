@@ -17,24 +17,24 @@ header {
     background-color: #333;
     color: white;
     padding: 20px;
-    border-bottom: 4px solid #ffcc00; /* Golden border separating header and section */
-    border-top: 4px solid #ffcc00; /* Golden border above the header */
+    border-bottom: 4px solid #ffcc00;
+    border-top: 4px solid #ffcc00;
     display: flex;
-    justify-content: center; /* Center the header content horizontally */
-    align-items: center; /* Center-aligns header content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between; /* Space out title and navigation */
-    align-items: center; /* Vertically align content */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    max-width: 1200px; /* Optional: Limit the max-width for larger screens */
+    max-width: 1200px;
 }
 
 .header-title {
-    text-align: center; /* Center the title text */
-    flex-grow: 1; /* Allow title to take up available space */
+    text-align: center;
+    flex-grow: 1;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Space between the menu items */
+    gap: 20px;
     margin: 0;
 }
 
@@ -59,32 +59,32 @@ nav ul li a {
     font-size: 1.2em;
     font-weight: 500;
     text-transform: uppercase;
-    transition: color 0.3s ease; /* Smooth color change on hover */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Change color to golden on hover */
+    color: #ffcc00;
 }
 
 /* Section styling */
 section {
     position: relative;
-    width: 100vw; /* Full page width */
-    height: 100vh; /* Full viewport height */
-    background-color: #326fa8; /* Background color */
+    width: 100vw;
+    height: 100vh;
+    background-color: #326fa8;
     color: white;
     display: flex;
-    justify-content: flex-start; /* Ensure content starts from the left */
+    justify-content: flex-start;
     padding: 40px;
 }
 
 /* Section 1: Text container styling */
 #section1 .container {
     display: flex;
-    flex-direction: column; /* Stack text vertically */
-    width: 25%; /* Text container takes 25% of the section width */
+    flex-direction: column;
+    width: 25%;
     justify-content: center;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start;
 }
 
 #section1 .text-container {
@@ -93,9 +93,8 @@ section {
     position: relative;
 }
 
-/* Styling for small-text ("Sustainable Fashion with Vibes") */
 #section1 .small-text h2 {
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6em;
     margin-bottom: 5px;
     font-weight: 400;
@@ -105,7 +104,6 @@ section {
     line-height: 1.4;
 }
 
-/* Styling for larger text ("LOOM VIBES") */
 #section1 .large-text {
     font-size: 4.5em;
     font-weight: 900;
@@ -120,12 +118,10 @@ section {
     flex-direction: column;
 }
 
-/* Adding space to the left of "VIBES" */
 #section1 .large-text h2:last-of-type {
     margin-left: 40px;
 }
 
-/* Hover effects for "LOOM VIBES" */
 #section1 .large-text:hover {
     color: #ffcc00;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
@@ -133,19 +129,18 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Styling for the image container */
 #section1 .image-container {
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     justify-content: flex-start;
-    width: 75%; /* Combined space for Image 1 and Image 2 */
+    width: 75%;
     height: 100%;
 }
 
 #section1 .image1 {
-    width: 60%; /* Increase Image 1 width to 60% */
+    width: 60%;
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -157,11 +152,11 @@ section {
 }
 
 #section1 .image2 {
-    width: 15%; /* Image 2 takes 15% of the section's width */
-    height: 50%; /* Image 2 is half the height of Image 1 */
+    width: 15%;
+    height: 50%;
     object-fit: cover;
     position: absolute;
-    top: 20%; /* Space between the top of the section and Image 2 */
+    top: 20%;
     right: 60%;
     z-index: 1;
     border-top-left-radius: 30px;
@@ -192,21 +187,19 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0; /* Prevent pushing the footer down */
-    position: relative; /* Required for z-index */
-    z-index: 2; /* Bring image-1 to the front */
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
 }
 
-/* Title styling for the full webpage photo section */
 #image-1 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
-    color: #326fa8; /* Match header background color */
+    color: #326fa8;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-/* Image styling for the full webpage photo section */
 #image-1 .image-1 {
     max-width: 100%;
     height: auto;
@@ -215,65 +208,58 @@ footer p {
     object-fit: cover;
 }
 
-/* New Section: Image 2 Styling */
 #image-2 {
-    margin-top: -50px;
-    background-color: #f8f8f8; /* Light background */
+    margin-top: 0;
+    background-color: #f8f8f8;
     padding: 0px;
     text-align: center;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Required for z-index */
-    z-index: 1; /* Send image-2 to the back */
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-/* Image 2 Styling */
 #image-2 img {
     top: -50px;
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-     /* Shadow around the image */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#image-3 {
+    margin-top: 0px;
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#image-3 .image-3 {
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     margin-bottom: 40px;
 }
 
-/* New Section: Image 3 Styling */
-#image-3 {
-    margin-top: 0px;
-    background-color: #f8f8f8;  /* Light background color */
-    padding: 40px 20px;
-    text-align: center;
-    color: #333;  /* Dark text color for readability */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;  /* Position relative for easier control */
-    z-index: 1;  /* Keep this image in normal stacking order */
-    width: 100vw;  /* Full width of the viewport */
-    height: 100vh;  /* Full height of the viewport */
-}
-
-/* Image Styling inside #image-3 */
-#image-3 .image-3 {
-    max-width: 100%;  /* Ensure the image takes up the full width */
-    height: auto;  /* Keep the image's aspect ratio */
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;  /* Optional: add rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Shadow around the image */
-    object-fit: cover;  /* Ensure the image covers the entire section without distortion */
-    margin-bottom: 40px;  /* Add some space below the image */
-}
-
-/* Optional: Styling for title or text (if you want to add text inside this section) */
 #image-3 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
-    color: #326fa8;  /* Matching color to header section */
+    color: #326fa8;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 600;
