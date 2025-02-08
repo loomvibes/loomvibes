@@ -9,7 +9,8 @@ form.addEventListener('submit', function(event) {
     formData.forEach((value, key) => {
         data[key] = value;
     });
-    console.log(data);
+
+    console.log(data); // Log form data for debugging
 
     const googleScriptURL = 'https://script.google.com/macros/s/AKfycbwVic4n1ERJ4_WAQ3r9-bl4iPGpeYVE691XYzNtSBkgs5oe93z9Adh8HsTWT8L8EpAa/exec';
 
@@ -21,7 +22,10 @@ form.addEventListener('submit', function(event) {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
     })
-    .then(response => response.text())
+    .then(response => {
+        console.log('Response:', response); // Log the response for debugging
+        return response.text();
+    })
     .then(result => {
         alert('Your message has been sent successfully!');
         form.reset(); // Reset the form
