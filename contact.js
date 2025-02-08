@@ -12,7 +12,7 @@ form.addEventListener('submit', function(event) {
 
     console.log(data); // Log form data for debugging
 
-    const googleScriptURL = 'https://script.google.com/macros/s/AKfycbwVic4n1ERJ4_WAQ3r9-bl4iPGpeYVE691XYzNtSBkgs5oe93z9Adh8HsTWT8L8EpAa/exec';
+    const googleScriptURL = 'https://script.google.com/macros/s/AKfycbwP04Ai8st2ue2WxjiGtkAUhxZIjZ_1fn0UK506uc0Hm0Pum8DeUHZe31PCiEctEa5B/exec';
 
     // Send form data to Google Apps Script using Fetch API
     fetch(googleScriptURL, {
