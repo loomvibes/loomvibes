@@ -1,18 +1,15 @@
-const form = document.getElementById('contactForm');
-
-form.addEventListener('submit', function(event) {
+document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
 
     // Collect form data
-    const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => {
+    var formData = new FormData(event.target);
+    var data = {};
+    formData.forEach(function(value, key) {
         data[key] = value;
     });
 
-    console.log(data); // Log form data for debugging
-
-    const googleScriptURL = 'https://script.google.com/macros/s/AKfycby8aCJ8Z89r_F_b4te6odJFJ-iRotINNdfkTQhUyDLg80bEkN3FeN5UZRryvAyp7qjc/exec';
+    // Define your Google Apps Script URL (replace this with your web app URL)
+    var googleScriptURL = 'https://script.google.com/a/macros/paytmmoney.com/s/AKfycbzKdOwMgFlzzp1gdrzfV9NFE-YKkTNfKuTDLwFDRuiGSkRlSBy4UYQRY3I3czQ2aSbi/exec';
 
     // Send form data to Google Apps Script using Fetch API
     fetch(googleScriptURL, {
@@ -22,16 +19,17 @@ form.addEventListener('submit', function(event) {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
     })
-    .then(response => {
-        console.log('Response:', response); // Log the response for debugging
-        return response.text();
-    })
+    .then(response => response.text())  // We are expecting plain text
     .then(result => {
-        alert('Your message has been sent successfully!');
-        form.reset(); // Reset the form
+        if (result === 'Success') {
+            alert('Your message has been sent successfully!');
+            document.getElementById("contactForm").reset(); // Reset the form
+        } else {
+            alert('Error: ' + result);  // Handle errors from Apps Script
+        }
     })
     .catch(error => {
-        console.error('Error:', error);  // Log error for debugging
+        console.error('Error:', error);  // Log any errors for debugging
         alert('There was an error submitting the form. Please try again.');
     });
 });
