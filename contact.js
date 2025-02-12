@@ -1,35 +1,38 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
+// contact.js
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-    // Collect form data
-    var formData = new FormData(event.target);
-    var data = {};
-    formData.forEach(function(value, key) {
-        data[key] = value;
-    });
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const message = document.getElementById('message').value;
 
-    // Define your Google Apps Script URL (replace this with your web app URL)
-    var googleScriptURL = 'https://script.google.com/a/macros/paytmmoney.com/s/AKfycbzKdOwMgFlzzp1gdrzfV9NFE-YKkTNfKuTDLwFDRuiGSkRlSBy4UYQRY3I3czQ2aSbi/exec';
+    // Construct the data object
+    const formData = {
+        name: name,
+        email: email,
+        mobile: mobile,
+        message: message
+    };
+    console.log(formData);
 
-    // Send form data to Google Apps Script using Fetch API
-    fetch(googleScriptURL, {
+    // Send data to Apps Script
+    fetch('https://script.google.com/macros/s/AKfycbzULtwVXOAUqnk1iiFLXIJtlJj2Giw1tKA0G43pOzGDHDsS1MUTVaIB6k5kh89gmtUS2A/exec', { // Replace with your Apps Script URL
         method: 'POST',
-        body: new URLSearchParams(data),
+        mode: 'no-cors',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        }
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
     })
-    .then(response => response.text())  // We are expecting plain text
-    .then(result => {
-        if (result === 'Success') {
-            alert('Your message has been sent successfully!');
-            document.getElementById("contactForm").reset(); // Reset the form
-        } else {
-            alert('Error: ' + result);  // Handle errors from Apps Script
-        }
+    .then(() => {
+        // You won't get a response here, so just handle success
+        alert('Message sent successfully!'); 
+        document.getElementById('contactForm').reset();
     })
     .catch(error => {
-        console.error('Error:', error);  // Log any errors for debugging
-        alert('There was an error submitting the form. Please try again.');
+        // You might get a network error here if the request fails completely
+        alert('An error occurred. Please try again later.');
+        console.error('Fetch Error:', error);
     });
 });
