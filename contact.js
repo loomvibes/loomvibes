@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     console.log(formData);
 
     // Send data to Apps Script
-    fetch('https://script.google.com/macros/s/AKfycbxPPUr_LG8Uj-PwhrzDF-pWmeNlmvgBuSkPZiVgf4JYcGVFzAcalKLRARv5iuqOAySgJg/exec', { // Replace with your Apps Script URL
+    fetch('https://script.google.com/macros/s/AKfycbw_YK5q14Ba5tngMaMHnBlIpmhFVuhf4OjAKPYwpnkvAlE9a7vqkKEXpqLi7mVC2u1_/exec', { // Replace with your Apps Script URL
         method: 'POST',
         mode: 'no-cors',
         headers: {
